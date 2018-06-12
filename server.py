@@ -36,11 +36,8 @@ def main():
             },
         }
         app = Application(**DD_SETTINGS)
-
-        # Disabling tornado logging
-        logging.getLogger('tornado.access').disabled = True
         server = HTTPServer(app)
-        
+
         print('Ready to receive requests')
         server.add_sockets(sockets)
         asyncio.get_event_loop().run_forever()
