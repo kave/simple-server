@@ -1,0 +1,8 @@
+# Async HTTP
+tornado==5.0.2
+aiohttp==2.3.7
+asyncio==3.4.3
+
+# APM
+datadog==0.21.0
+ddtrace==0.12.0
